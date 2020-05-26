@@ -3,32 +3,15 @@
  * @author Karthik Hande
  */
 body.light {
-  --pep-font: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-  --pep-primary-1: white;
-  --pep-primary-2: #EEEEEE;
-  --pep-primary-3: #dcdcdc;
-  --pep-secondary-1: white;
-  --pep-secondary-2: whitesmoke;
-  --pep-text-primary: black;
-  --pep-text-secondary: #5f5d5d;
-  --pep-text-placeholder: #8d97ac;
-  --side-bar-bg: #272b36;
-  --pep-input-bg: #e2e2e2;
-  --pep-input-text: grey;
-  --pep-badge-bg: #1290f6;
-  --pep-badge-text: white;
-  --selected-turbine-highlight: black;
-  --pep-icon-primary: black;
-  --pep-icon-default: #afb6bc;
-  --pep-icon-hover: grey;
-  --pep-icon-selected: #51c2fA;
-  --pep-button-bg: #1870b8;
-  --pep-button-text: #FFFFFF;
-  --pep-border-light: #bdc0c7;
-  --pep-border-hover: black;
-  --pep-chx-border: var(--pep-text-secondary);
-  --pep-chx-background: var(--pep-primary-1);
-  --pep-chx-tick: var(--pep-text-primary);
-  --pep-scrollbar-bg: #f4f4f4;
-  --pep-scroll-bar: white;
+  --cm-font:  monospace;;
+
+  --cm-primary: #fafbfe;
+
+  --cm-secondary: #fff;
+
+  --cm-text-primary: #98a6ad;
+  --cm-text-secondary: #8d97ac;
+
+  --cm-nav-bg: #313a46;
+  --cm-nav-text: #98a6ad;
 }

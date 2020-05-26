@@ -8,3 +8,24 @@
 
 // Themes
 @import './themes/index.themes';
+
+body {
+    background: var(--cm-primary);
+    color: var(--cm-text-primary);
+    font-family: var(--cm-font);
+    font-size: 14px;
+  }
+
+  .navbar-custom {
+    background: var(--cm-nav-bg);
+    min-height: 70px;
+  }
+
+  .navbar-brand {
+    color: var(--cm-nav-text);
+  }
+
+  .mat-row, .mat-header-row, .mat-header-cell, td.mat-cell {
+    background: var(--cm-secondary);
+    color: var(--cm-text-secondary);
+  }
