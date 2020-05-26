@@ -1,0 +1,60 @@
+<app-global-detail [globalDetail]="globalSummary"></app-global-detail>
+
+
+<div class="container">
+
+    <table mat-table [dataSource]="countries" matSort class="mat-elevation-z8">
+
+        <!-- Country Column -->
+        <ng-container matColumnDef="Country">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Country </th>
+            <td mat-cell *matCellDef="let element"><a [routerLink]="['/country', element.Slug]">{{element.Country}}</a></td>
+        </ng-container>
+
+        <!-- TotalConfirmed Column -->
+        <ng-container matColumnDef="TotalConfirmed">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Total Confirmed </th>
+            <td mat-cell *matCellDef="let element"> {{element.TotalConfirmed}} </td>
+        </ng-container>
+
+        <!-- NewConfirmed Column -->
+        <ng-container matColumnDef="NewConfirmed">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> New Confirmed </th>
+            <td mat-cell *matCellDef="let element"> {{element.NewConfirmed}} </td>
+        </ng-container>
+
+        <!-- TotalRecovered Column -->
+        <ng-container matColumnDef="TotalRecovered">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Total Recovered </th>
+            <td mat-cell *matCellDef="let element"> {{element.TotalRecovered}} </td>
+        </ng-container>
+
+        <!-- NewRecovered Column -->
+        <ng-container matColumnDef="NewRecovered">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> New Recovered</th>
+            <td mat-cell *matCellDef="let element"> {{element.NewRecovered}} </td>
+        </ng-container>
+
+        <!-- TotalDeaths Column -->
+        <ng-container matColumnDef="TotalDeaths">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Total Deaths </th>
+            <td mat-cell *matCellDef="let element"> {{element.TotalDeaths}} </td>
+        </ng-container>
+
+        <!-- NewDeaths Column -->
+        <ng-container matColumnDef="NewDeaths">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> New Deaths </th>
+            <td mat-cell *matCellDef="let element"> {{element.NewDeaths}} </td>
+        </ng-container>
+
+        <!-- Active Case Column -->
+        <ng-container matColumnDef="ActiveCase">
+            <th mat-header-cell *matHeaderCellDef> Active Case </th>
+            <td mat-cell *matCellDef="let element"> {{element.TotalConfirmed - element.TotalRecovered - element.TotalDeaths }} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+</div>

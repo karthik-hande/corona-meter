@@ -1,0 +1,58 @@
+/**
+ * @file   Scss Dark theme file
+ * @author Karthik Hande
+ */
+body.dark {
+  --pep-font: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+
+  // turbine bg
+  --pep-primary-1: #282b3c;
+  // description bg
+  --pep-primary-2: #282c38;
+  //breadcumb bg
+  --pep-primary-3: #242833;
+
+  //nav bg
+  --pep-secondary-1: #3c4353;
+  // route container
+  --pep-secondary-2: #2e3440;
+
+  --pep-text-primary: #FFFFFF;
+  --pep-text-secondary: #8d97ac;
+  --pep-text-placeholder: #8d97ac;
+
+  // side bar
+  --side-bar-bg: var(--pep-primary-1);
+
+  // input
+  --pep-input-bg: #272b36;
+  --pep-input-text: grey;
+
+  // badge
+  --pep-badge-bg: #1290f6;
+  --pep-badge-text: white;
+  --selected-turbine-highlight: #FFFFFF;
+
+  // icons
+  --pep-icon-primary: #FFFFFF;
+  --pep-icon-default: #afb6bc;
+  --pep-icon-hover: grey;
+  --pep-icon-selected: #51c2fA;
+
+  // buttons
+  --pep-button-bg: #1870b8;
+  --pep-button-text: #FFFFFF;
+
+  // borders
+  --pep-border-light: #4d5568;
+  --pep-border-hover: #ffffff;
+
+  // check-box
+    --pep-chx-border: var(--pep-text-secondary);
+    --pep-chx-background: var(--pep-primary-1);
+    --pep-chx-tick: var(--pep-text-primary);
+
+    // srollbar
+    --pep-scrollbar-bg: rgba(222, 220, 220, 0.19);
+    --pep-scroll-bar: #282c38;
+}
